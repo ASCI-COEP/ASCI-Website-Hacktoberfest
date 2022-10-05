@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
+
+:root {
+  --card-bg-color: white;
+  --text-color: rgb(0, 0, 0);
+  --ans-color: rgba(0, 0, 0, 0.897);
+  --box-shadow-color: rgb(71, 71, 71);
+}
+
+body {
+  background-color: black;
+}
+
+.page-heading {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: x-large;
+  padding: 1em;
+  letter-spacing: 1px;
+  color: rgb(0, 174, 255);
+}
+
+.interview-experience {
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--text-color);
+  border-radius: 5px;
+  /* Width of card */
+  width: 65%;
+  margin: 2em auto;
+  padding: 1.5em;
+  background-color: var(--card-bg-color);
+  -webkit-box-shadow: 0 0 20px var(--box-shadow-color);
+  box-shadow: 0 0 20px var(--box-shadow-color);
+}
+.question-n-ans ol li {
+  font-weight: 500;
+  margin-top: 1em;
+}
+.question-n-ans ol ul li {
+  list-style-type: none;
+  position: relative;
+  font-weight: normal;
+  margin: auto;
+}
+.question-n-ans ol ul li::before {
+  content: "➢";
+  font-size: 1em;
+  position: absolute;
+  left: -1.5em;
+}
+.question-n-ans ol ul a {
+  text-decoration: none;
+}
+@media (max-width: 1400px) {
+  .interview-experience {
+    width: 80%;
+  }
+}
+@media (max-width: 992px) {
+  .interview-experience {
+    padding: 1.2em;
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .interview-experience {
+    padding: 1em;
+    width: 95%;
+  }
+}

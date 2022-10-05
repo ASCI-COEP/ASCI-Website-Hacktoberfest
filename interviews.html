@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="home.css">
+    </link>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" href="asci-svg.png" type="image/gif" sizes="20x20">
+    <title>ASCI, COEP</title>
+
+    <!-- Interview CSS -->
+    <link rel="stylesheet" href="interviews.css" type="text/css" />
+</head>
+
+<body>
+    <!-- =========== scroll up ============== -->
+    <a id="scroll-up-btn" href="#goToTop" title="Go to top" style="position: fixed;top: 90vh;right: 1vw;
+     visibility:hidden;transition: all 0.5s ease-out;">
+        <img src="projects_images/icons8-scroll-up-48.png" style="height: 2.5em; width: 2.5em;" alt="...">
+    </a>
+
+    <script>
+        const scrollUpBtn = document.getElementById('scroll-up-btn')
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
+                scrollUpBtn.style.visibility = "visible";
+            } else {
+                scrollUpBtn.style.visibility = "hidden";
+            }
+        }
+    </script>
+    <!-- =========== END OF SCROLL UP ========== -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+
+    <header id="goToTop">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#1A2634">
+            <a class="navbar-brand logo" href="index.html"><img style="border-radius: 5px;" height=50px; width=170px;
+                    src="ASCI_LOGO.jpg"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="interviews.html">Interview Diaries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team/team21-22.html">Team</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto disappear">
+                    <li><a href="https://www.coep.org.in" target="_blank"><img class="coep-logo-img" width=120px
+                                src="./COEP_logo.png"></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============== Interview Section ============= -->
+
+    <section class="container">
+        <div class="page-heading" style="font-size: xx-large;" data-aos="zoom-in-up" data-aos-duration="1000">Interview
+            Diaries</div>
+        <div class="interviews">
+            <div class="interview" data-aos="zoom-in-right">
+                <div class="student-info">
+                    <div class="student-img">
+                        <img src="interviews/images/Yash_Jakhotiya.jpg" alt="...">
+                    </div>
+                    <h4 class="mt-2">Yash Jakhotiya <a class="social-button linkedin"
+                            href="https://www.linkedin.com/in/yash-jakhotiya/" target="_blank"> <img
+                                src="interviews/images/icons8-linkedin.svg" alt=""> </a></h4>
+                </div>
+                <div class="company-name">
+                    DE Shaw & Co.
+                </div>
+                <div class="view-btn">
+                    <a href="interviews/pages/Yash_Jakhotiya.html">Read Experience</a>
+                </div>
+            </div>
+            <div class="interview" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="student-info">
+                    <div class="student-img">
+                        <img src="interviews/images/Rani_Rajurkar.png" alt="...">
+                    </div>
+                    <h4 class="mt-2">Rani Rajurkar <a class="social-button linkedin"
+                            href="https://www.linkedin.com/in/rani-rajurkar-69a722169/" target="_blank"><img
+                                src="interviews/images/icons8-linkedin.svg" alt=""></a></h4>
+                </div>
+                <div class="company-name">
+                    VMware
+                </div>
+                <div class="view-btn">
+                    <a href="interviews/pages/Rani_Rajurkar.html">Read Experience</a>
+                </div>
+            </div>
+            <div class="interview" data-aos="zoom-in-right" data-aos-duration="1000">
+                <div class="student-info">
+                    <div class="student-img">
+                        <img src="interviews/images/Sanket_Patil.jpg" alt="...">
+                    </div>
+                    <h4 class="mt-2">Sanket Patil <a class="social-button linkedin"
+                            href="https://www.linkedin.com/in/sanketpatil29sp" target="_blank"><img
+                                src="interviews/images/icons8-linkedin.svg" alt=""></a></h4>
+                </div>
+                <div class="company-name">
+                    Veritas Technologies LLC.
+                </div>
+                <div class="view-btn">
+                    <a href="interviews/pages/Sanket_Patil.html">Read Experience</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!-- =========== scroll up ============== -->
+    <a id="scroll-up-btn" href="#goToTop" title="Go to top" style="position: fixed;top: 90vh;right: 1vw;
+    visibility:hidden;transition: all 0.5s ease-out;">
+        <img src="projects_images/icons8-scroll-up-48.png" style="height: 2.5em; width: 2.5em;" alt="...">
+    </a>
+
+    <script>
+        const scrollUpBtn = document.getElementById('scroll-up-btn')
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
+                scrollUpBtn.style.visibility = "visible";
+            } else {
+                scrollUpBtn.style.visibility = "hidden";
+            }
+        }
+    </script>
+
+    <!-- ======================================================= -->
+
+    <!-- ---------------------------------------------------------------------------- -->
+    <footer class="footer bg-dark py-3">
+
+        <h3 text-align="center" style="color: white;">Connect</h3>
+
+        <br>
+        <div class="rounded-social-buttons">
+            <a class="social-button facebook" href="https://m.facebook.com/coepasci" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a class="social-button github" href="https://www.github.com/asci-coep/" target="_blank"><i
+                    class="fab fa-github"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/company/coepasci" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a class="social-button instagram" href="http://www.instagram.com/coep_asci" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+        <br>
+        <div class="container">
+            <span class="text-muted ">Copyright&copy;ASCI COEP</span><br>
+            <span class="text-muted ">Designed by ASCI Core Team</span>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/holder/2.9.7/holder.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

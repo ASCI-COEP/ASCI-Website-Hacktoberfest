@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="team.css">
+  </link>
+  <title>ASCI, COEP</title>
+  <link rel="icon" href="../asci-svg.png" type="image/gif" sizes="20x20">
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <!-- =========== scroll up ============== -->
+   <a id="scroll-up-btn" href="#goToTop" title="Go to top" style="position: fixed;top: 90vh;right: 1vw;
+   visibility:hidden;transition: all 0.5s ease-out;">
+     <img src="../projects_images/icons8-scroll-up-48.png" style="height: 2.5em; width: 2.5em;" alt="...">
+   </a>
+ 
+   <script>
+     const scrollUpBtn = document.getElementById('scroll-up-btn')
+ 
+     // Below code isn't working maybe because of overflow-x: hidden; css property. So use uncommented code
+     // window.onscroll = function () { scrollFunction() };
+     // function scrollFunction() {
+     //   if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
+     //     scrollUpBtn.style.visibility = "visible";
+     //   } else {
+     //     scrollUpBtn.style.visibility = "hidden";
+     //   }
+     // }
+     document.body.addEventListener('scroll', () => {
+       if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
+         scrollUpBtn.style.visibility = "visible";
+       } else {
+         scrollUpBtn.style.visibility = "hidden";
+       }
+     })
+   </script>
+
+  <header id="goToTop">
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#1A2634">
+      <a class="navbar-brand logo" href="../index.html"><img style="border-radius: 5px;" height=50px;
+          width=170px; src="../ASCI_LOGO.jpg"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../interviews.html">Interview Diaries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../team/team21-22.html">Team</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto disappear">
+          <li><a href="https://www.coep.org.in" target="_blank"><img class="coep-logo-img" width=120px
+                src="../COEP_logo.png"></a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="mt-4" style="font-size: 1.5rem;">
+    <a class="text-center" href="./team21-22.html" style="text-decoration: none; color: white;">&larr;</a>
+    &nbsp;AY 2019-20&nbsp;
+    <a class="text-center" href="./team20-21.html" style="text-decoration: none; color: white;">&rarr;</a>
+  </div>
+
+  <h2 class="mt-4 mb-4" style="color:rgb(0, 164, 255) ;">MEET OUR TEAM</h2>
+
+  <!-- === Team Image Row === -->
+  <div id="row">
+
+    <!-- === HOD === -->
+    <div class="containert">
+      <div class="cards" id="nohover">
+        <div class="imgbx">
+          <img src="../images/hod.jpg" alt="...">
+        </div>
+        <div class="content" style="display: none;">
+          <div class="details">
+            <ul class="social_icons">
+              <!-- <li><a target="_blank" href="https://www.coep.org.in/mycoep/vahidacompcoepacin"><i class="fa fa-user"
+                    aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/vahida-attar-b393911b1/"><i
+                    class="fa fa-linkedin" aria-hidden="true"></i></a></li> -->
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Dr. (MS) Vahida Attar</h3>
+      <h5 class="text-muted">Head, Department of Computer Engineering and Information Technology</h5>
+    </div>
+    <!-- === END OF HOD === -->
+    <!-- ==== Faculty Advisor === -->
+    <div class="containert">
+      <div class="cards" id="nohover">
+        <div class="imgbx">
+          <img src="../images/abhijitam.jpg" alt="...">
+        </div>
+        <div class="content" style="display: none;">
+          <div class="details">
+            <ul class="social_icons">
+              <!-- <li><a target="_blank" href="https://www.coep.org.in/mycoep/abhijitcompcoepacin"><i class="fa fa-user"
+                    aria-hidden="true"></i></a></li> -->
+              <!-- <li><a target="_blank" href="https://git@gitlab.com/abhijit13"><i class="fa fa-gitlab" aria-hidden="true"></i></a></li> -->
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Prof. Abhijit A.M.</h3>
+      <h5 class="text-muted">Faculty Advisor</h5>
+    </div>
+    <!-- === END OF Faculty Advisor === -->
+    <div class="containert">
+      <div class="cards">
+        <div class="imgbx">
+          <img src="../images/YashJakhotiya.jpg" alt="...">
+        </div>
+        <div class="content">
+          <div class="details">
+            <ul class="social_icons">
+              <li><a target="_blank" href="https://www.linkedin.com/in/yash-jakhotiya/"><i class="fa fa-linkedin"
+                    aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://github.com/yashjakhotiya"><i class="fa fa-github"
+                    aria-hidden="true"></i></a></li>
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Yash Jakhotiya</h3>
+      <h5 class="text-muted">Secretary</h5>
+    </div>
+    <div class="containert">
+      <div class="cards">
+        <div class="imgbx">
+          <img src="../images/RahulKesharvani.jpeg" alt="...">
+        </div>
+        <div class="content">
+          <div class="details">
+            <ul class="social_icons">
+              <li><a target="_blank" href="https://www.linkedin.com/in/rahul-keshervani-b84077119/"><i
+                    class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li> -->
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Rahul Keshervani</h3>
+      <h5 class="text-muted">Head, Web Development</h5>
+    </div>
+    <div class="containert">
+      <div class="cards">
+        <div class="imgbx">
+          <img src="../images/RaniRajulkar.jpeg" alt="...">
+        </div>
+        <div class="content">
+          <div class="details">
+            <ul class="social_icons">
+              <li><a target="_blank" href="https://www.linkedin.com/in/rani-rajurkar-69a722169/"><i
+                    class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://github.com/ranirajurkar9"><i class="fa fa-github"
+                    aria-hidden="true"></i></a></li>
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Rani Rajurkar</h3>
+      <h5 class="text-muted">Head, Technical Writing & Social Media</h5>
+    </div>
+    <div class="containert">
+      <div class="cards">
+        <div class="imgbx">
+          <img src="../images/InderneelBhojwani.jpeg" alt="...">
+        </div>
+        <div class="content">
+          <div class="details">
+            <ul class="social_icons">
+              <li><a target="_blank" href="https://www.linkedin.com/in/inderneel-bhojwani-927765187/"><i
+                    class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://github.com/Inderneel98"><i class="fa fa-github"
+                    aria-hidden="true"></i></a></li>
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Inderneel Bhojwani</h3>
+      <h5 class="text-muted">Head, Corporate & Alumni Outreach</h5>
+    </div>
+  </div>
+
+
+  <footer class="footer bg-dark py-3 mt-5">
+
+    <h3 text-align="center" style="color: white;">Connect</h3>
+
+    <br>
+    <div class="rounded-social-buttons">
+      <a class="social-button facebook" href="https://m.facebook.com/coepasci" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="social-button github" href="https://www.github.com/asci-coep/" target="_blank"><i
+          class="fab fa-github"></i></a>
+      <a class="social-button linkedin" href="https://www.linkedin.com/company/coepasci" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
+      <a class="social-button instagram" href="http://www.instagram.com/coep_asci" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+    <br>
+    <div class="container">
+      <span class="text-muted ">Copyright&copy;ASCI COEP</span><br>
+      <span class="text-muted ">Designed by ASCI Core Team</span>
+    </div>
+
+  </footer>
+
+  <!-- Jquery needed -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/holder/2.9.7/holder.min.js"></script>
+</body>
+
+</html>

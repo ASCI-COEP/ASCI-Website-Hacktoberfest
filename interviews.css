@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
+:root {
+  --card-bg-color: rgb(63, 63, 63);
+  --text-color: white;
+  --view-btn-bg-color: rgb(42, 42, 42);
+  --box-shadow-color: rgba(42, 42, 42, 0.883);
+}
+body {
+  background-color: black;
+}
+.page-heading {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: x-large;
+  margin-top: 1.5em;
+  /* letter-spacing: 1px; */
+  color: rgb(0, 174, 255);
+}
+
+.interviews {
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--text-color);
+}
+
+.interviews {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em auto;
+  width: 80%;
+}
+.interviews .interview {
+  width: 30%; /* To set width of card */
+  border-radius: 5px;
+  background-color: var(--card-bg-color);
+  margin: 2em 2em;
+  transition: all 0.5s ease-out;
+  -webkit-box-shadow: 0 0 20px var(--box-shadow-color);
+  box-shadow: 0 0 20px var(--box-shadow-color);
+}
+.interview .student-info {
+  width: 100%;
+}
+.student-info .student-img {
+  position: relative;
+  width: 100%;
+  height: 30vh; /* To set height of student image */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.student-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.student-info h4,
+.batch {
+  text-align: center;
+}
+.batch {
+  font-style: italic;
+}
+.company-name {
+  font-size: large;
+  text-align: center;
+  margin: 1em auto;
+}
+.view-btn {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: var(--text-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.view-btn a {
+  padding: 0.5em;
+  display: block;
+  text-decoration: none;
+  color: var(--card-bg-color);
+  background-color: var(--text-color);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  transition: all 0.2s linear;
+}
+.view-btn a:hover {
+  color: var(--text-color);
+  background-color: var(--view-btn-bg-color);
+}
+@media (max-width: 1200px) {
+  .interviews .interview {
+    width: 40%;
+    margin: 2em auto;
+  }
+}
+@media (max-width: 992px) {
+  .interviews {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .interviews .interview {
+    width: 90%;
+    margin: 2em auto;
+  }
+}
+@media (max-width: 539px) {
+  .interviews {
+    width: 90%;
+  }
+  .page-heading{
+    letter-spacing: normal;
+  }
+}

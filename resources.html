@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="resources.css">
+  </link>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="icon" href="asci-svg.png" type="image/gif" sizes="20x20">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <title>ASCI, COEP</title>
+
+</head>
+
+<body style="background-color: black; color: white;">
+
+  <!-- =========== scroll up ============== -->
+  <a id="scroll-up-btn" href="#goToTop" title="Go to top" style="position: fixed;top: 90vh;right: 1vw;
+    visibility:hidden;transition: all 0.5s ease-out;">
+    <img src="projects_images/icons8-scroll-up-48.png" style="height: 2.5em; width: 2.5em;" alt="...">
+  </a>
+
+  <script>
+    const scrollUpBtn = document.getElementById('scroll-up-btn')
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+      if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
+        scrollUpBtn.style.visibility = "visible";
+      } else {
+        scrollUpBtn.style.visibility = "hidden";
+      }
+    }
+  </script>
+  <!-- ===================================================== -->
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+
+  <header id="goToTop">
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#1A2634">
+      <a class="navbar-brand logo" href="index.html"><img style="border-radius: 5px;" height=50px; width=170px;
+          src="ASCI_LOGO.jpg"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link " href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="interviews.html">Interview Diaries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team/team21-22.html">Team</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto disappear">
+          <li><a href="https://www.coep.org.in" target="_blank"><img class="coep-logo-img" width=120px
+                src="./COEP_logo.png"></a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <!-- Learning Paths Carousel -->
+  <div id="carouselExampleDark" class="learning-path carousel carousel slide container" data-bs-ride="carousel">
+
+    <!-- <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+    </ol> -->
+
+    <div class="path-carousel carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <a href="#web-dev"> <img src="Resources/Web-Dev.jpeg" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-md-block">
+          <button class="learn-more btn btn-primary"> <a href="#web-dev">Learn More</a></button>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <a href="#machine-learning"><img src="Resources/machineLearning.jpeg" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-md-block">
+          <button class="learn-more btn btn-primary"> <a href="#machine-learning">Learn More</a></button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <a href="#android-dev"><img src="Resources/AndroidDevelopment.jpg" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-md-block">
+          <button class="learn-more btn btn-primary"> <a href="#android-dev">Learn More</a></button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <a href="#data-structures"><img src="Resources/dataStructures.png" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-md-block">
+          <button class="learn-more btn btn-primary"> <a href="#data-structures">Learn More</a></button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <a href="#deep-learning"><img src="Resources/dl&nn.jpg" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-md-block">
+          <button class="learn-more btn btn-primary"> <a href="#deep-learning">Learn More</a></button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <a href="#mern"><img src="Resources/mern.png" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-md-block">
+          <button class="learn-more btn btn-primary"> <a href="#mern">Learn More</a></button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <a href="#flask-django"><img src="Resources/flask&django.png" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-md-block">
+          <button class="learn-more btn btn-primary"> <a href="#flask-django">Learn More</a></button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <a href="#competitive-programming"><img src="Resources/cp.png" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-md-block">
+          <button class="learn-more btn btn-primary"> <a href="#competitive-programming">Learn More</a></button>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">&#10094;</span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next"  type="button" data-bs-target="#carouselExampleDark"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true">&#10095;</span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
+  <!-- Web Development-->
+  <section class="container mt-5" id="web-dev">
+    <h2 class="webLearningHeading" id="webdevelopment">Web Development</h2>
+    <hr class="webLearningLine">
+    <div class="info">
+      <p>
+        The trade of IT and Computer Science (CSE) is basically categorized into three sub-domains; Software
+        engineering,
+        Networking and website development. However former two are also very interesting and fruitful as web
+        development,
+        students are consistently made to believe that those are more important and significant than WebDev.
+
+        Web Development and Designing is third wheel in computer technologies and it can’t be under-estimated.
+      </p>
+
+      <p>
+        Web Development is the future. Have a look around, we google stuff for relevant websites, we make our
+        transactions
+        online,order food online, fill out forms online.
+        Morever, the software we use in desktop is also getting webified.
+        Clearly, Web is the future.
+
+        Hence, Web development skills are in high demand worldwide and well paid too – making development a great career
+        option. It is one of the easiest accessible higher paid fields as you do not need a traditional university
+        degree
+        to become qualified.
+      </p>
+    </div>
+
+    <!-- Front End -->
+    <div class="webDevelopmentRequirements">
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/HTML.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Hyper Text Markup Language</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary> What is HTML?</summary>
+            HTML is the standard markup language for creating Web pages.
+            HTML describes the structure of a Web page. HTML consists of a series of elements.
+          </details>
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i> </h5>
+            <a target="_blank" href="https://www.w3schools.com/html/">W3Schools</a>
+            <a target="_blank" href="https://www.freecodecamp.org/news/html-css-11-hour-course/">FreeCodeCamp</a>
+          </div>
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/qz0aGYrrlhU">Programming with Mosh</a>
+            <a target="_blank" href="https://youtu.be/BsDoLVMnmZs">CodeWithHarry</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/CSS.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Cascading Style Sheets</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>What is CSS?</summary>
+            CSS is a style sheet language which is used to describe the look and
+            formatting of a document written in markup language. It provides an additional feature to HTML.
+          </details>
+
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.w3schools.com/css/default.asp">W3Schools</a>
+            <a target="_blank" href="https://www.freecodecamp.org/news/html-css-11-hour-course/">FreeCodeCamp</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/I9XRrlOOazo">The Net Ninja</a>
+            <a target="_blank" href="https://youtu.be/Edsxf_NBFrw">CodeWithHarry</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/JavaScript.png" alt="Alt image">
+          <div class="mytitle">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>What is JavaScript?</summary>
+            JavaScript is a scripting or programming language that allows you to implement complex features on web
+            pages like interactive maps, animations,scrolling.
+          </details>
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.w3schools.com/js/default.asp">W3Schools</a>
+            <a target="_blank" href="https://javascript.info/">javascript.info</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/W6NZfCO5SIk">Programming with Mosh</a>
+            <a target="_blank" href="https://youtu.be/pN6jk0uUrD8">Akshay Saini</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/BootStrap.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Bootstrap</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>What is Bootstrap?</summary>
+            Bootstrap is a HTML, CSS & JS Library that simplifies the development of responsive web pages.
+            CSS predefined classes in Bootstrap help in easy designing.
+          </details>
+
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.w3schools.com/bootstrap5/">W3Schools</a>
+            <a target="_blank" href="https://getbootstrap.com/">GetBootstrap</a>
+          </div>
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/4sosXZsdy-s">Traversy Media</a>
+            <a target="_blank" href="https://www.youtube.com/watch/qIULMnbH2-o">The New Boston</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/React.svg" alt="Alt image">
+          <div class="mytitle">
+            <p>React JS</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>What is ReactJS?</summary>
+            React JS is an open-source, front end, JavaScript library for building user interfaces and UI components.
+            It is maintained by Facebook. React can be used to develop single-page or mobile apps.
+          </details>
+
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://reactjs.org/docs/getting-started.html">ReactJS.org</a>
+            <a target="_blank" href="https://www.w3schools.com/react/">W3Schools</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg">The Net Ninja</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=pgAvVxowaYU&list=PL55RiY5tL51qLY6Yriev2bO9AF0gdvpbb">Academind</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/NodeJS.png" alt="Alt image">
+          <div class="mytitle">
+            <p>NodeJS</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>What is NodeJs?</summary>
+            Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that executes
+            JavaScript code outside a web browser. Node.js lets developers use JavaScript to write Server Side
+            Scripts.
+          </details>
+
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://medium.com/quick-code/the-best-tutorials-to-learn-node-js-34818d757013">Quick Code</a>
+            <a target="_blank" href="https://www.coursera.org/learn/server-side-nodejs">Coursera</a>
+
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg">The Net Ninja</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=spPtAEmwys4">ProgrammingKnowledge</a>
+          </div>
+        </div>
+      </div> -->
+  </section>
+
+
+  <!-- Machine Learning -->
+  <section class="container mt-5" id="machine-learning">
+    <h2 class="webLearningHeading" id="machinelearning">Machine Learning</h2>
+    <hr class="webLearningLine">
+    <div class="info">Machine Learning (ML) is emerging as one of the hottest fields today. It has penetrated into
+      numerous aspects of our everyday life—be it Siri or Alexa, Facebook/Instagram friend suggestions, Gmail spam
+      filters, traffic congestion predictions, customer support chatbots, and much more. <br> <br>
+      The Machine Learning market is
+      ever-growing, predicted to scale up at a CAGR of 43.8% from 2019 to 2025, reaching up to an estimated evaluation
+      of
+      USD 96.7 billion by the end of 2025.
+
+      Consequently, there has been a significant increase in the number of Machine Learning enthusiasts across the
+      globe.
+      Given this scenario, the first step should be to religiously follow ML/AI leaders, in order to seek
+      advice and get insights on current trends and technologies.
+    </div>
+
+    <!-- Languages and Libraries -->
+    <div class="webDevelopmentRequirements">
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/PythonLogo.webp" alt="Alt image">
+          <div class="mytitle">
+            <p>Python</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>What is Python?</summary>
+            Python is an interpreted, high-level and general-purpose programming language.
+            Though there are other languages, Python has more M.L. libraries than any other language and is easy to
+            learn.
+          </details>
+
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank"
+              href="https://diveintopython3.problemsolving.io/table-of-contents.html">DiveIntoPython3</a>
+            <a target="_blank" href="https://developers.google.com/edu/python">Google's Python Class</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank"
+              href="https://www.youtube.com/watch?v=aqvDTCpNRek&list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME">CodeWithHarry</a>
+            <a target="_blank" href="https://www.youtube.com/c/TokyoEdTech/playlists">Tokyo EDtech</a>
+            <a target="_blank"
+              href="https://www.youtube.com/watch?v=QXeEoD0pB3E&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3">Telusko</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/Ml.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Core Concepts</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>Why Core Concepts?</summary>
+            Machine Learning is an application of artificial intelligence where a computer/machine learns from the
+            past
+            experiences and makes future predictions.
+            Though there are prebuilt libraries for machine learning , understanding core concepts is very important.
+          </details>
+
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank"
+              href="https://www.youtube.com/watch?v=PPLop4L2eGk&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN">Andrew
+              Ng</a>
+            <a target="_blank" href="https://youtu.be/OGxgnH8y2NM">SentDex</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/Tensorflow.png" alt="Alt image">
+          <div class="mytitle">
+            <p>M.L. Libraries</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>What are M.L. Libraries?</summary>
+            Libraries are sets of routines and functions that are written in a given language. Python libraries help
+            researchers/ mathematicians who
+            are less equipped with developer knowledge to easily do machine learning.
+          </details>
+
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.tensorflow.org">Tensorflow</a>
+            <a target="_blank" href="https://numpy.org/devdocs/user/quickstart.html">NumPy</a>
+            <a target="_blank" href="https://scikit-learn.org/stable/getting_started.html">SciKit Learn</a>
+            <a target="_blank" href="https://pytorch.org/tutorials">PyTorch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Android Development -->
+  <section class="container mt-5" id="android-dev">
+    <h2 class="webLearningHeading" id="androiddevelopment">Android Development</h2>
+    <hr class="webLearningLine">
+    <div class="info">
+      <p> Android has been the best-selling OS worldwide on smartphones since 2011 and on tablets since 2013.As of 2019,
+        Android held a share of about 91 percent of the mobile operating system market in India As of May 2017, it has
+        over two billion monthly active users, the largest installed base of any operating system, and as of August
+        2020,
+        the Google Play Store features over 3 million apps.</p>
+      The current stable version is Android 11, released on September 8, 2020.
+      Android Developers
+    </div>
+
+
+    <div class="webDevelopmentRequirements">
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/Java.svg" alt="Alt image">
+          <div class="mytitle">
+            <p>Java</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>What is Java?</summary>
+            Java is an object-oriented programming language.
+            It is the official Language of Android along with Kotlin.
+            There are tons of tutorials on internet on Java Programming.
+          </details>
+
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.coursera.org/learn/java-object-oriented-programming">Coursera</a>
+            <a target="_blank" href="https://www.codecademy.com/learn/learn-java">CodeAcademy</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/WOUpjal8ee4">Telusko</a>
+            <a target="_blank"
+              href="https://www.youtube.com/watch?v=ntLJmHOJ0ME&list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q">CodeWithHarry</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/AndroidStudio.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Android SDK</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>What is Android SDK?</summary>
+            The Android SDK and Android Studio is available free.
+            Android Studio allows developers to write code and assemble their apps from various packages and libraries
+            from the Android SDK.
+          </details>
+
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://developer.android.com/training/basics/firstapp">Android_Documentation</a>
+            <a target="_blank" href="https://www.javatpoint.com/android-tutorial">JavaTpoint</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/mXjZQX3UzOs">CodeWithHarry</a>
+            <a target="_blank" href="https://www.youtube.com/user/androiddevelopers">Android_Developers</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/reactnative.png" alt="Alt image">
+          <div class="mytitle">
+            <p>React Native</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <details>
+            <summary>What is React Native?</summary>
+            React Native is a framework that builds a hierarchy of UI components to build the JavaScript code. It has a
+            set of components for both iOS and Android platforms to build a mobile application with native look and
+            feel. ReactJS, on the other hand, is an open source JavaScript library to create user interfaces. However,
+            both React Native and ReactJS are developed by Facebook using the same design principles, except designing
+            interfaces.
+          </details>
+
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://reactnative.dev/">reactnative</a>
+            <a target="_blank" href="https://www.codecademy.com/learn/learn-react-native">CodeAcademy</a>
+          </div>
+
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/0-S5a0eXPoc">Programming with Mosh</a>
+            <a target="_blank" href="https://youtu.be/qSRrxpdMpVc">Academind</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Structures -->
+  <section class="container mt-5" id="data-structures">
+    <h2 class="webLearningHeading" id="webdevelopment">Data Structures</h2>
+    <hr class="webLearningLine">
+    <div class="info">
+      <p>
+        A data structure is a specialized format for organizing, processing, retrieving and storing data. Data
+        structures make it easy for users to access and work with the data they need in appropriate ways. Most
+        importantly, data structures frame the organization of information so that machines and humans can better
+        understand it. In computer science and computer programming, a data structure may be selected or designed to
+        store data for the purpose of using it with various algorithms.
+      </p>
+
+      <p>
+        Data structures are the building blocks for more sophisticated applications. They are designed by composing data
+        elements into a logical unit representing an abstract data type that has relevance to the algorithm or
+        application. It is not only important to use data structures, but it is also important to choose the proper data
+        structure for each task.
+      </p>
+    </div>
+
+    <!-- Programming Languages -->
+    <!-- DP, Graphs, Tree, Stack/Queue/LinkedList -->
+    <div class="webDevelopmentRequirements">
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/intro_ds.jpeg" alt="Alt image">
+          <div class="mytitle">
+            <p>Introduction to Data Structures</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.geeksforgeeks.org/data-structures/">geeksforgeeks</a>
+          </div>
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y">Neso
+              Academy</a>
+            <a target="_blank" href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ">Apna
+              College</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/tree.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Trees</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.geeksforgeeks.org/binary-tree-data-structure/">geeksforgeeks</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtube.com/playlist?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk">take U
+              forward</a>
+            <a target="_blank"
+              href="https://youtube.com/playlist?list=PLqM7alHXFySHCXD7r1J0ky9Zg_GBB1dbk">geeksforgeeks</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/graphs.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Graphs</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank"
+              href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/">geeksforgeeks</a>
+            <a target="_blank" href="https://www.programiz.com/dsa/graph">programiz</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtube.com/playlist?list=PL-Jc9J83PIiHfqDcLZMcO9SsUDY4S3a-v">Pepcoding</a>
+            <a target="_blank" href="https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw">take U
+              forward</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/dp.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Dynamic Programming</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://codeforces.com/blog/entry/67679">codeforces</a>
+            <a target="_blank" href="https://www.geeksforgeeks.org/dynamic-programming/">geeksforgeeks</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtube.com/playlist?list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go">Aditya
+              Verma</a>
+            <a target="_blank"
+              href="https://youtube.com/playlist?list=PLqM7alHXFySGbXhWx7sBJEwY2DnhDjmxm">geeksforgeeks</a>
+            <a target="_blank" href="https://youtube.com/playlist?list=PL-Jc9J83PIiG8fE6rj9F5a6uyQ5WPdqKy">Pepcoding</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Deep Learning & Neural Networks -->
+  <section class="container mt-5" id="deep-learning">
+    <h2 class="webLearningHeading" id="webdevelopment">Deep Learning & Neural Networks</h2>
+    <hr class="webLearningLine">
+    <div class="info">
+      <p>
+        Deep Learning is a subset of Machine Learning, which on the other hand is a subset of Artificial Intelligence.
+        Artificial Intelligence is a general term that refers to techniques that enable computers to mimic human
+        behavior. Machine Learning represents a set of algorithms trained on data that make all of this possible.
+      </p>
+
+      <p>
+        Deep Learning, on the other hand, is just a type of Machine Learning, inspired by the structure of a human
+        brain. Deep learning algorithms attempt to draw similar conclusions as humans would by continually analyzing
+        data with a given logical structure. To achieve this, deep learning uses a multi-layered structure of algorithms
+        called neural networks. In general, neural networks can perform the same tasks as classical algorithms of
+        machine learning. However, it is not the other way around.
+
+      </p>
+    </div>
+
+    <!-- Programming Languages -->
+    <!-- DP, Graphs, Tree, Stack/Queue/LinkedList -->
+    <div class="webDevelopmentRequirements">
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/deepLearning.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Deep Learning</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.kaggle.com/learn/intro-to-deep-learning">kaggle</a>
+          </div>
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi">Krish
+              Naik</a>
+            <a target="_blank" href="https://youtu.be/VyWAvY2CF9c">FreeCodeCamp.org</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/neuralNetworks.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Neural Networks</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank"
+              href="https://towardsdatascience.com/machine-learning-for-beginners-an-introduction-to-neural-networks-d49f22d238f9">towardsdatascience</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtube.com/playlist?list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3">sentdex</a>
+            <a target="_blank" href="https://youtu.be/tPYj3fFJGjk">FreeCodeCamp.org</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MERN -->
+  <section class="container mt-5" id="mern">
+    <h2 class="webLearningHeading" id="webdevelopment">MERN Stack</h2>
+    <hr class="webLearningLine">
+    <div class="info">
+      <p>
+        MERN Stack is a collection of powerful technologies and robust, used to develop scalable master web applications
+        comprising backend, front-end, and database components. It is JavaScript that is used for the faster and easier
+        development of full-stack web applications. MERN Stack is a technology that is a user-friendly full-stack
+        JavaScript framework for building applications and dynamic websites.
+      </p>
+
+      <p>
+        Each of these four technologies plays an important role in providing an end-to-end framework for the developers.
+        Even these four technologies play an important role in the development process of web applications.
+      </p>
+    </div>
+
+    <!-- Programming Languages -->
+    <!-- DP, Graphs, Tree, Stack/Queue/LinkedList -->
+    <div class="webDevelopmentRequirements">
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/mongodb.png" alt="Alt image">
+          <div class="mytitle">
+            <p>MongoDB</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://docs.mongodb.com/manual/introduction/">MongoDB</a>
+          </div>
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/pWbMrx5rVBE">Traversy Media</a>
+            <a target="_blank" href="https://youtu.be/5QEwqX5U_2M">codedamn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/express.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Express</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://expressjs.com/en/starter/generator.html">ExpressJS</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/pKd0Rpw7O48">programming with mosh</a>
+            <a target="_blank" href="https://youtu.be/L72fhGm1tfE">Traversy Media</a>
+          </div>
+        </div>
+      </div>
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/react.svg" alt="Alt image">
+          <div class="mytitle">
+            <p>ReactJS</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://reactjs.org/tutorial/tutorial.html">ReactJS</a>
+          </div>
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/Ke90Tje7VS0">programming with mosh</a>
+            <a target="_blank"
+              href="https://youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt">CodeWithHarry</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/NodeJS.png" alt="Alt image">
+          <div class="mytitle">
+            <p>NodeJS</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.w3schools.com/nodejs/nodejs_intro.asp">w3schools</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtu.be/TlB_eWDSMt4">programming with mosh</a>
+            <a target="_blank" href="https://youtu.be/fBNz5xF-Kx4">Traversy Media</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flask & Django -->
+  <section class="container mt-5" id="flask-django">
+    <h2 class="webLearningHeading" id="webdevelopment">Flask & Django</h2>
+    <hr class="webLearningLine">
+    <div class="info">
+      <p>
+        Flask is part of the categories of the micro-framework. Micro-framework are normally framework with little to no
+        dependencies to external libraries. This has pros and cons. Pros would be that the framework is light, there are
+        little dependency to update and watch for security bugs, cons is that some time you will have to do more work by
+        yourself or increase yourself the list of dependencies by adding plugins.
+      </p>
+      <p>
+        Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built
+        by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing
+        your app without needing to reinvent the wheel. It’s free and open source.
+      </p>
+      <p>
+        Django is high level framework and bit difficult for a beginner to understand. Hence, if you are beginner, you
+        should definitely explore Flask first before Django.
+      </p>
+    </div>
+
+    <!-- Programming Languages -->
+    <!-- DP, Graphs, Tree, Stack/Queue/LinkedList -->
+    <div class="webDevelopmentRequirements">
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/flask.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Flask</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://flask.palletsprojects.com/en/2.0.x/tutorial/">Flask</a>
+            <a target="_blank"
+              href="https://www.geeksforgeeks.org/python-introduction-to-web-development-using-flask/">geeksforgeeks</a>
+          </div>
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH">Corey
+              Schafer</a>
+            <a target="_blank" href="https://youtube.com/playlist?list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX">Tech With
+              Tim</a>
+            <a target="_blank"
+              href="https://youtube.com/playlist?list=PLu0W_9lII9agAiWp6Y41ueUKx1VcTRxmf">CodeWithHarry</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/django.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Django</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.djangoproject.com/start/">djangoproject</a>
+            <a target="_blank" href="https://www.geeksforgeeks.org/django-basics/">geeksforgeeks</a>
+          </div>
+
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://www.youtube.com/playlist?list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu">CS50</a>
+            <a target="_blank" href="https://youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p">Corey
+              Schafer</a>
+            <a target="_blank" href="https://youtu.be/F5mRW0jo-U4">FreeCodeCamp.org</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CP with C++ STL -->
+  <section class="container mt-5" id="competitive-programming">
+    <h2 class="webLearningHeading" id="webdevelopment">Competitive Programming with C++ STL</h2>
+    <hr class="webLearningLine">
+    <div class="info">
+      <p>
+        Competitive programming involves programmers competing against each other to solve programming questions in a
+        limited amount of time. These events are usually held over the Internet or a local network. The contestants of
+        the events are known as sport programmers.
+      </p>
+
+      <p>
+        Contestants solve logical or mathematical programming questions in the coding language of their choice. The
+        number of questions can vary depending on the contest. The results are judged on the number of questions solved,
+        time spent solving the problems, and other factors, like execution time, program size, etc.
+      </p>
+      <p>
+        C++ STL is a set of data structures and algorithms that we normally encounter during coding. It is an integral
+        part of competitive programming in c++. If you are in an undergraduate college and want to appear in placements,
+        then question from c++ stl will be asked in interviews.
+
+      </p>
+    </div>
+
+    <!-- Programming Languages -->
+    <!-- DP, Graphs, Tree, Stack/Queue/LinkedList -->
+    <div class="webDevelopmentRequirements">
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/stl.png" alt="Alt image">
+          <div class="mytitle">
+            <p>CP With C++ STL</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://github.com/kunal-kushwaha/Competitive-Programming-Resources">Kunal
+              Kushwaha</a>
+            <a target="_blank"
+              href="https://dev.to/educative/introductory-guide-to-competitive-programming-with-c-81c">dev.to</a>
+            <a target="_blank"
+              href="https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/">hackerearth</a>
+            <a target="_blank" href="https://www.geeksforgeeks.org/cpp-stl-tutorial/">geeksforgeeks</a>
+            <a target="_blank" href="https://www.hackerrank.com/domains/cpp
+              ">hackerrank</a>
+          </div>
+          <div class="channels">
+            <h5>Best YouTube Channels <i class="bi bi-youtube"></i></h5>
+            <a target="_blank" href="https://www.youtube.com/watch?v=PZogbfU4X5E">Utkarsh Gupta</a>
+            <a target="_blank" href="https://youtu.be/zBhVZzi5RdU">take U forward</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard">
+        <div class="myheader">
+          <img src="Resources/coding.png" alt="Alt image">
+          <div class="mytitle">
+            <p>Coding Practice Platform</p>
+          </div>
+        </div>
+        <div class="mycontent">
+          <div class="links">
+            <h5>Best Websites <i class="bi bi-globe"></i></h5>
+            <a target="_blank" href="https://www.hackerrank.com/">hackerrank</a>
+            <a target="_blank" href="https://leetcode.com/">leetcode</a>
+            <a target="_blank" href="https://www.codechef.com/">codechef</a>
+            <a target="_blank" href="https://codeforces.com/">codeforces</a>
+            <a target="_blank" href="https://www.hackerearth.com/">hackerearth</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-dark py-3 mt-5">
+
+    <h3 text-align="center" style="color: white;">Connect</h3>
+
+    <br>
+    <div class="rounded-social-buttons">
+      <a class="social-button facebook" href="https://m.facebook.com/coepasci" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="social-button github" href="https://www.github.com/asci-coep/" target="_blank"><i
+          class="fab fa-github"></i></a>
+      <a class="social-button linkedin" href="https://www.linkedin.com/company/coepasci" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
+      <a class="social-button instagram" href="http://www.instagram.com/coep_asci" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+    <br>
+    <div class="container">
+      <span class="text-muted ">Copyright&copy;ASCI COEP</span><br>
+      <span class="text-muted ">Designed by ASCI Core Team</span>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/holder/2.9.7/holder.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="resources.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

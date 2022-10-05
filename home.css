@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: 'Noto Serif', serif;
+}
+
+/* Home section */
+html,
+body {
+  overflow-x: hidden;
+}
+details summary{
+  font-size: large;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 0;
+}
+
+h1 span {
+  display: inline-flex;
+  color: #62d8e7;
+}
+h1 span:nth-child(even) {
+  overflow: hidden;
+  transition: ease-out 0.5s;
+  color: rgb(247, 245, 245);
+  border-bottom: 4px solid #62d8e7;
+  letter-spacing: -1em;
+}
+
+h1:hover span:nth-child(even) {
+  letter-spacing: 0;
+}
+
+h1:hover span:nth-child(2) {
+  transition-delay: 0s;
+}
+h1:hover span:nth-child(4) {
+  transition-delay: 0.5s;
+}
+h1:hover span:nth-child(6) {
+  transition-delay: 1s;
+}
+h1:hover span:nth-child(8) {
+  transition-delay: 1.5s;
+}
+
+.scav {
+  background-color: black;
+  margin: 0 -500%;
+  padding: 0 500%;
+  color: white;
+}
+/* ===== Mouse Scroll CSS ====== */
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+	margin-top: 125px;
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  animation-delay: .3s;
+  animation-direction: alternate;
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+/* ===== END OF Mouse Scroll CSS === */
+.goal ul {
+  font-size: x-large;
+}
+
+.goal h2 {
+  font-size: xx-large;
+}
+
+.goal p {
+  font-size: x-large;
+}
+
+.contact {
+  background-color: #111;
+  color: #fff;
+}
+.contact .contact-cards{
+  max-width: 700px;
+  margin: 1rem;
+  height: 234px;
+}
+@media (max-width:768px){
+  .contact .contact-cards{
+    height: auto;
+  }
+}
+.contact h2 {
+  text-align: center;
+}
+.card {
+  text-align: center;
+  color: black;
+}
+
+.card img {
+  height: 40px;
+  width: 40px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.socialhandles {
+  text-align: left;
+}
+
+.socialhandles img {
+  height: 30px;
+  width: 40px;
+}
+.socialhandles a {
+  text-decoration: none;
+  color: black;
+}
+/* Top Half of card, image. */
+
+.property-image {
+  height: 10em;
+  width: 20em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("Event_Images/industrial_session.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img1 {
+  background-image: url("Event_Images/FYs.jpeg");
+}
+.img2 {
+  background-image: url("Event_Images/gsoc.jpeg");
+}
+.img3 {
+  background-image: url("Event_Images/Asci_session.jpg");
+}
+.img4 {
+  background-image: url("Event_Images/industrial_session.jpeg.jpeg");
+}
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin: 0;
+  }
+}
+.mobile-break {
+  display: inline-block;
+}
+.responsiveHeading {
+  display: flex;
+  font-size: 45px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+@media screen and (max-width: 767px) {
+  .disappear {
+    display: none;
+  }
+  .hero-img {
+    display: none;
+  }
+
+  .heading > .responsiveHeading {
+    margin-top: 40px;
+  }
+  .goal ul {
+    font-size: large;
+  }
+
+  .goal h2 {
+    font-size: x-large;
+  }
+
+  .goal p {
+    font-size: large;
+  }
+
+  iframe {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero-img {
+    display: none;
+  }
+}
+.svg-inline--fa {
+  vertical-align: -0.2em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter,
+.fa-facebook-f,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover,
+.rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.github {
+  background: black;
+}
+
+.rounded-social-buttons .social-button.github:hover,
+.rounded-social-buttons .social-button.github:focus {
+  color: black;
+  background: #fefefe;
+  border-color: black;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover,
+.rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #aa076b;
+  background: -webkit-linear-gradient(to right, #61045f, #aa076b);
+  background: linear-gradient(to right, #61045f, #aa076b);
+}
+
+.rounded-social-buttons .social-button.instagram:hover,
+.rounded-social-buttons .social-button.instagram:focus {
+  color: #e1306c;
+  background: white;
+  border-color: #e1306c;
+}
+
+/*.ObjectivesList li,
+.GoalsList li,*/
+.vision {
+  color: rgb(185, 185, 185);
+  font-size: 1.5rem;
+  word-spacing: 4px;
+  text-align: left;
+  font-family: cursive;
+  width: 60%;
+  margin: auto;
+  background-color: rgb(0, 0, 0, 0);
+  padding: 0.5em 2em;
+}
+@media (max-width: 1040px){
+  .vision{
+    width: 80%;
+    padding: 0;
+  }
+}
+
+.heading {
+  animation: moveInRight 2s;
+}
+.subHeading {
+  animation: moveInLeft 2s;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  30% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  30% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+.banner-section {
+  position: relative;
+}
+
+.banner-section .pattern-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 300px;
+  height: 110vh;
+  background-image: url(./bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.auto-container {
+  position: relative;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.coep-logo-img {
+  object-fit: contain;
+  height: 70px;
+  margin: -15px 0;
+}
+/*Changes made to objective and goals section*/
+.ob {
+  margin-bottom: 10px;
+  background-color: black;
+  height: 100%;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+#objectives .row div{
+  max-width: 550px;
+}
+.cl {
+  padding: 20px;
+  text-align: center;
+}
+.tick {
+  color: green;
+  margin-right: 4px;
+}
+.logo1 {
+  display: block;
+  width: 80px;
+  height: 80px;
+
+  margin: 15px auto 15px auto;
+  color: white;
+  background-color: black;
+}
+
+.card-big-shadow {
+  max-width: 320px;
+  position: relative;
+}
+
+.coloured-cards .card {
+  margin-top: 30px;
+}
+
+.card[data-radius="none"] {
+  border-radius: 0px;
+}
+.goal {
+  border-top-left-radius: 8px;
+  border-top: 10px dashed rgb(57, 57, 153);
+  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.goal[data-background="image"] .title,
+.goal[data-background="image"] .stats,
+.goal[data-background="image"] .category,
+.card[data-background="image"] .description,
+.card[data-background="image"] .content,
+.card[data-background="image"] .card-footer,
+.card[data-background="image"] small,
+.card[data-background="image"] .content a,
+.card[data-background="color"] .title,
+.card[data-background="color"] .stats,
+.card[data-background="color"] .category,
+.card[data-background="color"] .description,
+.card[data-background="color"] .content,
+.card[data-background="color"] .card-footer,
+.card[data-background="color"] small,
+.card[data-background="color"] .content a {
+  color: #ffffff;
+}
+.goal.card-just-text .content_goal {
+  /*padding: 50px 65px;*/
+  text-align: center;
+  padding: 50px 30px 50px 30px;
+}
+.goal{
+  background-color: rgb(190, 241, 237);
+}
+.goal .content_goal {
+  padding: 20px 20px 10px 20px;
+  margin: auto;
+}
+.goal::before,
+.goal::after {
+  content: "";
+  background-color: darkred;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid darkgray;
+}
+.goal::before {
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: -10px;
+}
+.goal::after {
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: -5px;
+}
+
+.goal[data-color="blue"] .category {
+  color: #7a9e9f;
+}
+
+.goal.category,
+.goal.label {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.card-big-shadow:before {
+  /* background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png"); */
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  bottom: -12%;
+  content: "";
+  display: block;
+  left: -12%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.goal .description_goal {
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+  color: black;
+}
+.content-card {
+  margin-top: 30px;
+}
+#fir {
+  padding: 10% 5% 38% 5%;
+}
+#sec {
+  padding: 10% 5% 0% 5%;
+}
+#third {
+  padding: 10% 5% 30% 5%;
+}
+#fourth {
+  padding: 10% 5% 30% 5%;
+}
+#fifth {
+  padding: 10% 5% 44% 5%;
+}
+
+/*======== COLORS ===========*/
+.card[data-color="blue"] {
+  background: #b8d8d8;
+}
+.card[data-color="blue"] .description_goal {
+  color: #506568;
+}
+
+.card[data-color="green"] {
+  background: #d5e5a3;
+}
+.card[data-color="green"] .description_goal {
+  color: #60773d;
+}
+.card[data-color="green"] .category {
+  color: #92ac56;
+}
+
+.card[data-color="yellow"] {
+  background: #ffe28c;
+}
+.card[data-color="yellow"] .description_goal {
+  color: #b25825;
+}
+.card[data-color="yellow"] .category {
+  color: #d88715;
+}
+
+.card[data-color="brown"] {
+  background: #d6c1ab;
+}
+.card[data-color="brown"] .description {
+  color: #75442e;
+}
+.card[data-color="brown"] .category {
+  color: #a47e65;
+}
+
+.card[data-color="purple"] {
+  background: #baa9ba;
+}
+.card[data-color="purple"] .description {
+  color: #3a283d;
+}
+.card[data-color="purple"] .category {
+  color: #5a283d;
+}
+
+.card[data-color="orange"] {
+  background: #ff8f5e;
+}
+.card[data-color="orange"] .description {
+  color: #772510;
+}
+.card[data-color="orange"] .category {
+  color: #e95e37;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo1 {
+    width: 50px;
+    height: 50px;
+  }
+  .cl {
+    padding: 25px;
+  }
+  .ob {
+    font-size: 14px;
+  }
+  .goal {
+    border-top: 7px dashed rgb(57, 57, 153);
+    font-size: 12px;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  #fir,
+  #sec,
+  #third,
+  #fourth,
+  #fifth {
+    padding: 10px 7px 7px 7px;
+    line-height: 1.5rem;
+  }
+  .card-big-shadow{
+    max-width:fit-content;
+  }
+}
+
+/* END OF Changes made to objective and goals section*/
+
+
+/* ============== Counter CSS ================ */
+:root {
+  --counter-color: rgb(0, 164, 255);
+}
+.counters {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.counter {
+  display: inline-block;
+  height: 14em;
+  width: 14em;
+  color: var(--counter-color);
+  margin: 6em 0;
+  transition: all 0.2s ease-in;
+}
+.counter:hover {
+  transform: scale(1.04);
+}
+.counter .counter-icon {
+  position: relative;
+  height: 60%;
+  width: 60%;
+  margin: auto;
+  border: 2px solid var(--counter-color);
+  border-radius: 3px;
+  transform: rotate(45deg);
+  text-align: center;
+}
+.counter-icon #icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 45px; /* Size of icon */
+}
+.counter .counter-text {
+  margin-top: 2em;
+  text-align: center;
+}
+.counter-text .count {
+  font-size: 2.5em;
+}
+@media (max-width: 920px) {
+  .counter {
+    height: 10em;
+    width: 10em;
+    margin: 6em 0;
+  }
+}
+@media (max-width: 660px) {
+  .counter {
+    height: 13em;
+    width: 13em;
+    margin: 4em auto;
+  }
+}
+@media (max-width: 516px) {
+  .counter {
+    height: 12em;
+    width: 12em;
+    margin: 3em 0;
+  }
+}
+/* ============== End of Counter CSS ================ */
+
+/* ===== Announcements Section CSS ==== */
+#Announcements{
+  width: 100%;
+  height: 100vh;
+}
+#Announcements #carouselExampleCaptions{
+  position: relative;
+  width: 60%;
+  height: 80%;
+  margin: auto;
+}
+#Announcements .carousel-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#Announcements .carousel-inner .carousel-item{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#Announcements .carousel-inner .carousel-item img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#Announcements .carousel-inner .carousel-item .carousel-caption{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width:1040px){
+  #Announcements #carouselExampleCaptions{
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width:768px){
+  #Announcements #carouselExampleCaptions{
+    width: 95%;
+    height: 70%;
+    margin: auto;
+  }
+}
+/* ===== END OF Announcements Section CSS ==== */

@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="team.css">
+  </link>
+  <title>ASCI, COEP</title>
+  <link rel="icon" href="../asci-svg.png" type="image/gif" sizes="20x20">
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- =========== scroll up ============== -->
+  <a id="scroll-up-btn" href="#goToTop" title="Go to top" style="position: fixed;top: 90vh;right: 1vw;
+  visibility:hidden;transition: all 0.5s ease-out;">
+    <img src="../projects_images/icons8-scroll-up-48.png" style="height: 2.5em; width: 2.5em;" alt="...">
+  </a>
+
+  <script>
+    const scrollUpBtn = document.getElementById('scroll-up-btn')
+
+    // Below code isn't working maybe because of overflow-x: hidden; css property. So use uncommented code
+    // window.onscroll = function () { scrollFunction() };
+    // function scrollFunction() {
+    //   if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
+    //     scrollUpBtn.style.visibility = "visible";
+    //   } else {
+    //     scrollUpBtn.style.visibility = "hidden";
+    //   }
+    // }
+    document.body.addEventListener('scroll', () => {
+      if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
+        scrollUpBtn.style.visibility = "visible";
+      } else {
+        scrollUpBtn.style.visibility = "hidden";
+      }
+    })
+  </script>
+
+  <header id="goToTop">
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#1A2634">
+      <a class="navbar-brand logo" href="../index.html"><img style="border-radius: 5px;" height=50px; width=170px;
+          src="../ASCI_LOGO.jpg"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../interviews.html">Interview Diaries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../team/team21-22.html">Team</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto disappear">
+          <li><a href="https://www.coep.org.in" target="_blank"><img class="coep-logo-img" width=120px
+                src="../COEP_logo.png"></a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="mt-4" style="font-size: 1.5rem;">
+    <a class="text-center" href="./team20-21.html" style="text-decoration: none; color: white;">&larr;</a> 
+    &nbsp;AY 2021-22&nbsp;
+    <a class="text-center" href="./team19-20.html" style="text-decoration: none; color: white;">&rarr;</a>
+  </div>
+
+  <h2 class="mt-4 mb-4" style="color:rgb(0, 164, 255) ;">MEET OUR TEAM</h2>
+
+  <!-- === Team Image Row === -->
+  <div id="row">
+
+    <!-- === HOD === -->
+    <div class="containert">
+      <div class="cards" id="nohover">
+        <div class="imgbx">
+          <img src="../images/hod.jpg" alt="...">
+        </div>
+        <div class="content" style="display: none;">
+          <div class="details">
+            <ul class="social_icons">
+              <!-- <li><a target="_blank" href="https://www.coep.org.in/mycoep/vahidacompcoepacin"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/vahida-attar-b393911b1/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> -->
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Dr. (MS) Vahida Attar</h3>
+      <h5 class="text-muted">Head, Department of Computer Engineering and Information Technology</h5>
+    </div>
+    <!-- === END OF HOD === -->
+    <!-- ==== Faculty Advisor === -->
+    <div class="containert">
+      <div class="cards" id="nohover">
+        <div class="imgbx">
+          <img src="../images/abhijitam.jpg" alt="...">
+        </div>
+        <div class="content" style="display: none;">
+          <div class="details">
+            <ul class="social_icons">
+              <!-- <li><a target="_blank" href="https://www.coep.org.in/mycoep/abhijitcompcoepacin"><i class="fa fa-user" aria-hidden="true"></i></a></li> -->
+              <!-- <li><a target="_blank" href="https://git@gitlab.com/abhijit13"><i class="fa fa-gitlab" aria-hidden="true"></i></a></li> -->
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Prof. Abhijit A.M.</h3>
+      <h5 class="text-muted">Faculty Advisor</h5>
+    </div>
+    <!-- === END OF Faculty Advisor === -->
+    <div class="containert">
+      <div class="cards">
+        <div class="imgbx">
+          <img src="../images/ArchishaShukla.jpg" alt="...">
+        </div>
+        <div class="content">
+          <div class="details">
+            <ul class="social_icons">
+              <li><a target="_blank" href="https://www.linkedin.com/in/archishashukla/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://github.com/ArchishaS2801"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Archisha Shukla</h3>
+      <h5 class="text-muted">Secretary</h5>
+    </div>
+    <div class="containert">
+      <div class="cards">
+        <div class="imgbx">
+          <img src="../images/AnushkaTadphale.jpg" alt="...">
+        </div>
+        <div class="content">
+          <div class="details">
+            <ul class="social_icons">
+              <li><a target="_blank" href="https://www.linkedin.com/in/anushka-tadphale/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://github.com/AnushkaAT"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Anushka Tadphale</h3>
+      <h5 class="text-muted">Head, Technical Writing & Social Media</h5>
+    </div>
+    <div class="containert">
+      <div class="cards">
+        <div class="imgbx">
+          <img src="../images/TusharPathade.png" alt="...">
+        </div>
+        <div class="content">
+          <div class="details">
+            <ul class="social_icons">
+              <li><a target="_blank" href="https://www.linkedin.com/in/tushar-pathade-20503320b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://github.com/pathadeTush"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Tushar Pathade</h3>
+      <h5 class="text-muted">Head, Web Development</h5>
+    </div>
+    <div class="containert">
+      <div class="cards">
+        <div class="imgbx">
+          <img src="../images/RitikNaik.jpg" alt="...">
+        </div>
+        <div class="content">
+          <div class="details">
+            <ul class="social_icons">
+              <li><a target="_blank" href="https://www.linkedin.com/in/ritik-naik-a207551b2/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://github.com/ritiknaik"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Ritik Naik</h3>
+      <h5 class="text-muted">Head, Machine Learning and Python</h5>
+    </div>
+    <div class="containert">
+      <div class="cards">
+        <div class="imgbx">
+          <img src="../images/AnjaliDofe.jpg" alt="...">
+        </div>
+        <div class="content">
+          <div class="details">
+            <ul class="social_icons">
+              <li><a target="_blank" href="https://www.linkedin.com/in/anjali-dofe-0a126b1a1/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://github.com/anjalidofe"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Anjali Dofe</h3>
+      <h5 class="text-muted">Head, Accounts & Documentation</h5>
+    </div>
+    <div class="containert">
+      <div class="cards">
+        <div class="imgbx">
+          <img src="../images/AdeshChoudhar.jpg" alt="...">
+        </div>
+        <div class="content">
+          <div class="details">
+            <ul class="social_icons">
+              <li><a target="_blank" href="https://www.linkedin.com/in/adesh-choudhar/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://github.com/AdeshChoudhar"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <!-- <li><a target="_blank" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Adesh Choudhar</h3>
+      <h5 class="text-muted">Head, Competitive Coding & Open Source</h5>
+    </div>
+  </div>
+
+
+  <footer class="footer bg-dark py-3 mt-5">
+
+    <h3 text-align="center" style="color: white;">Connect</h3>
+
+    <br>
+    <div class="rounded-social-buttons">
+      <a class="social-button facebook" href="https://m.facebook.com/coepasci" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="social-button github" href="https://www.github.com/asci-coep/" target="_blank"><i
+          class="fab fa-github"></i></a>
+      <a class="social-button linkedin" href="https://www.linkedin.com/company/coepasci" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
+      <a class="social-button instagram" href="http://www.instagram.com/coep_asci" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+    <br>
+    <div class="container">
+      <span class="text-muted ">Copyright&copy;ASCI COEP</span><br>
+      <span class="text-muted ">Designed by ASCI Core Team</span>
+    </div>
+
+  </footer>
+
+  <!-- Jquery needed -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/holder/2.9.7/holder.min.js"></script>
+</body>
+
+</html>
+
+
+<!-- ====== Previous Team Page Code ==== -->
+<!-- <div class="container mt-5">
+    <div class="row">
+      <div class="col mt-1 mx-auto px-auto text-center meetteam">
+        <h1>Meet Our Team</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="vahida my-5 col-sm-3">
+        <img class="rounded-circle z-depth-2 image" src="./images/hod.jpg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Dr.(Mrs) Vahida Attar</h3>
+        <h4>Head, Department of Computer Engineering and IT</h4>
+
+      </div>
+      <div class="col-sm-4"></div>
+      <div class="my-5 col-sm-3">
+        <img class="rounded-circle z-depth-2" src="./images/abhijit-sketch.jpeg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Prof. Abhijit A.M</h3>
+        <h4>Faculty Advisor</h4>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="my-5 col-sm-3">
+        <img class="rounded-circle z-depth-2" src="./images/Vedant.jpeg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Vedant Kandge<a style="text-decoration: none;" target="_blank"
+            href="https://www.linkedin.com/in/vedant-kandge-917123174"> <svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></a></h3>
+        <h4>Secretary</h4>
+
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="my-5 col-sm-2">
+        <img class="rounded-circle z-depth-2" src="./images/Aditi.jpeg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Aditi Medhane <a style="text-decoration: none;" target="_blank"
+            href="https://www.linkedin.com/in/aditi-medhane-92b531191/"> <svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></a></h3>
+        <h4>Head, Technical Writing and Social Media</h4>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="my-5 col-sm-2">
+        <img class="rounded-circle z-depth-2" src="./images/atharva.jpeg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Atharva Phand <a style="text-decoration: none;" target="_blank"
+            href="https://www.linkedin.com/in/atharva-phand-152b101a9"> <svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></a></h3>
+        <h4>Head, Corporate and Alumni Outreach</h4>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="my-5 col-sm-3">
+        <img class="rounded-circle z-depth-2" src="./images/manish.jpeg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Manish Arora <a style="text-decoration: none;"
+            href="https://www.linkedin.com/in/manish-arora-77b96a178"> <svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></a></h3>
+        <h4>Head, Web Development</h4>
+
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="my-5 col-sm-2">
+        <img class="rounded-circle z-depth-2" src="./images/mrunal.jpeg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Mrunal Kotkar <a style="text-decoration: none;"
+            href="https://www.linkedin.com/in/mrunal-kotkar-7783a5195"> <svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></a></h3>
+        <h4>Head, Accounts And Documentation</h4>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="my-5 col-sm-2">
+        <img class="rounded-circle z-depth-2" src="./images/Muskan.jpeg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Muskan Paryani <a style="text-decoration: none;" target="_blank"
+            href="https://www.linkedin.com/in/muskan-paryani-05b523191"> <svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></a></h3>
+        <h4>Head, Competitive Coding And Open Source</h4>
+      </div>
+    </div>
+
+    <h1 class="mt-5 meetteam">Ex-Core Team</h1>
+    <center>
+      <div class="text-center row">
+
+        <div class="my-5">
+          <img class="rounded-circle z-depth-2" src="./images/YashJakhotiya.jpg" height="300" width="270"
+            data-holder-rendered="true">
+          <h3 class="mt-1">Yash Jakhotiya <a style="text-decoration: none;" target="_blank"
+              href="https://www.linkedin.com/in/yash-jakhotiya/"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg></a></h3>
+          <h4>Secretary</h4>
+
+        </div>
+      </div>
+    </center>
+
+    <div class="row">
+
+      <div class="my-5 col-sm-3">
+        <img class="rounded-circle z-depth-2" src="./images/RahulKesharvani.jpeg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Rahul Keshervani <a style="text-decoration: none;" target="_blank"
+            href="https://www.linkedin.com/in/rahul-keshervani-b84077119/"> <svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></a></h3>
+        <h4>Head, Web Development</h4>
+
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="my-5 col-sm-2">
+        <img class="rounded-circle z-depth-2" src="./images/RaniRajulkar.jpeg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Rani Rajulkar<a style="text-decoration: none;" target="_blank"
+            href="https://www.linkedin.com/in/rani-rajurkar-69a722169/"> <svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></a></h3>
+        <h4>Head, Technical Writing and Social Media</h4>
+
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="my-5 col-sm-2">
+        <img class="rounded-circle z-depth-2" src="./images/InderneelBhojwani.jpeg" height="300" width="270"
+          data-holder-rendered="true">
+        <h3 class="mt-1">Inderneel Bhojwani <a style="text-decoration: none;"
+            href="https://www.linkedin.com/in/inderneel-bhojwani-927765187/"> <svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></a></h3>
+        </h3>
+        <h4>Head, Corporate And Alumni Outreach</h4>
+      </div>
+    </div> -->
+
+<!-- <div class="row">
+            <div class="col my-5 mx-auto px-auto">
+              <div class="flip-card mx-auto">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <a href="#" class="link-block">
+                      <img src="./images/Vedant.jpeg" alt="vedant" style="width:300px;height:300px;">
+                      </a>
+                      <h3 class="mt-1">Vedant Kandge</h3>
+                    </div>
+                    <div class="flip-card-back py-3">
+                      <div class="text-center my-5 py-3">
+                        <h3>Secretary</h3>
+                        <p>
+                            <span><a href="https://www.linkedin.com/in/vedant-kandge-917123174"><img src="images/linkedin.png" style="width: 50px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Linkedin</span><br>
+                            <span><a href="https://github.com/vedvkandge2000"><img src="images/github.png" style="width: 40px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Github</span><br>
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col my-5 mx-auto px-auto">
+              <div class="flip-card mx-auto">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <a href="#" class="link-block">
+                      <img src="./images/Aditi.jpeg" alt="Aditi" style="width:300px;height:300px;">
+                      </a>
+                      <h3 class="mt-1">Aditi Medhane</h3>
+                    </div>
+                    <div class="flip-card-back py-3">
+                      <div class="text-center my-5 py-3">
+                          <h3>Head, Technical Writing and Social Media</h3>
+                          <p>
+                            <span><a href="https://www.linkedin.com/in/aditi-medhane-92b531191/"><img src="images/linkedin.png" style="width: 50px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Linkedin</span><br>
+                            <span><a href="https://github.com/AditiRM"><img src="images/github.png" style="width: 40px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Github</span><br>
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col my-5 mx-auto px-auto">
+              <div class="flip-card mx-auto">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <a href="#" class="link-block">
+                      <img src="images/atharva.jpeg" alt="Atharva" style="width:300px;height:300px;">
+                      </a>
+                      <h3 class="mt-1">Atharva Phand</h3>
+                    </div>
+                    <div class="flip-card-back py-3">
+                      <div class="text-center my-5 py-3">
+                          <h3>Head, Corporate and Alumni Outreach</h3>
+                          <p>
+                            <span><a href="https://www.linkedin.com/in/atharva-phand-152b101a9"><img src="images/linkedin.png" style="width: 50px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Linkedin</span><br>
+                            <span><a href="https://github.com/atharvaphand08"><img src="images/github.png" style="width: 40px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Github</span><br>
+                          </p>
+                        </div>
+                    </div>                    
+                  </div>
+                </div>
+            </div>
+        <div class="row">
+          <div class="col my-5 mx-auto px-auto">
+            <div class="flip-card mx-auto">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a href="#" class="link-block">
+                    <img src="./images/manish.png" alt="Manish" style="width:300px;height:300px;">
+                    </a>
+                    <h3 class="mt-1">Manish Arora</h3>
+                  </div>
+                  <div class="flip-card-back py-3">
+                    <div class="text-center my-5 py-3">
+                        <h3>Head, Web Development</h3>
+                        <p>
+                          <span><a href="https://www.linkedin.com/in/manish-arora-77b96a178"><img src="images/linkedin.png" style="width: 50px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Linkedin</span><br>
+                          <span><a href="https://github.com/mnarora"><img src="images/github.png" style="width: 40px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Github</span><br>
+                        </p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col my-5 mx-auto px-auto">
+            <div class="flip-card mx-auto">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a href="#" class="link-block">
+                    <img src="images/mrunal.jpeg" alt="Mrunal" style="width:300px;height:300px;">
+                    </a>
+                    <h3 class="mt-1">Mrunal Kotkar</h3>
+                  </div>
+                  <div class="flip-card-back py-3">
+                    <div class="text-center my-5 py-3">
+                        <h3>Head, Accounts and Documentation</h3>
+                        <p>
+                          <span><a href="https://www.linkedin.com/in/mrunal-kotkar-7783a5195"><img src="images/linkedin.png" style="width: 50px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Linkedin</span><br>
+                          <span><a href="https://github.com/MrunalKotkar"><img src="images/github.png" style="width: 40px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Github</span><br>
+                        </p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col my-5 mx-auto px-auto">
+            <div class="flip-card mx-auto">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <a href="#" class="link-block">
+                    <img src="./images/Muskan.jpeg" alt="Muskan" style="width:300px;height:300px;">
+                    </a>
+                    <h3 class="mt-1">Muskan Paryani</h3>
+                  </div>
+                  <div class="flip-card-back py-3">
+                    <div class="text-center my-5 py-3">
+                        <h3>Head, Competitive Coding and Open Source</h3>
+                        <p>
+                          <span><a href="https://www.linkedin.com/in/muskan-paryani-05b523191"><img src="images/linkedin.png" style="width: 50px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Linkedin</span><br>
+                          <span><a href="https://github.com/Muskan777"><img src="images/github.png" style="width: 40px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Github</span><br>
+                        </p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="mt-5" style="text-align: center;">Ex-Core Team</h1>
+
+
+    <div class="row">
+      <div class="col my-5 mx-auto px-auto">
+        <div class="flip-card mx-auto">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <a href="#" class="link-block">
+                <img src="images/YashJakhotiya.jpg" alt="vedant" style="width:300px;height:300px;">
+                </a>
+                <h3 class="mt-1">Yash Jakhotiya</h3>
+              </div>
+              <div class="flip-card-back py-3">
+                <div class="text-center my-5 py-3">
+                  <h3>Secretary</h3>
+                  <p>
+                      <span><a href="https://www.linkedin.com/in/yash-jakhotiya/"><img src="images/linkedin.png" style="width: 50px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Linkedin</span><br>
+                      <span><a href="https://github.com/yashjakhotiya"><img src="images/github.png" style="width: 40px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Github</span><br>
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col my-5 mx-auto px-auto">
+        <div class="flip-card mx-auto">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <a href="#" class="link-block">
+                <img src="images/RahulKesharvani.jpeg" alt="Manish" style="width:300px;height:300px;">
+                </a>
+                <h3 class="mt-1">Rahul Keshervani</h3>
+              </div>
+              <div class="flip-card-back py-3">
+                <div class="text-center my-5 py-3">
+                    <h3>Head, Web Development</h3>
+                    <p>
+                      <span><a href="https://www.linkedin.com/in/rahul-keshervani-b84077119/"><img src="images/linkedin.png" style="width: 50px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Linkedin</span><br>
+                      <span><a href="https://github.com/rahulKQL"><img src="images/github.png" style="width: 40px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Github</span><br>
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col my-5 mx-auto px-auto">
+        <div class="flip-card mx-auto">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <a href="#" class="link-block">
+                <img src="images/RaniRajulkar.jpeg" alt="Mrunal" style="width:300px;height:300px;">
+                </a>
+                <h3 class="mt-1">Rani Rajurkar</h3>
+              </div>
+              <div class="flip-card-back py-3">
+                <div class="text-center my-5 py-3">
+                    <h3>Head, Technical Writing and Social Media</h3>
+                    <p>
+                      <span><a href="https://www.linkedin.com/in/rani-rajurkar-69a722169/"><img src="images/linkedin.png" style="width: 50px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Linkedin</span><br>
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col my-5 mx-auto px-auto">
+        <div class="flip-card mx-auto">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <a href="#" class="link-block">
+                <img src="images/InderneelBhojwani.jpeg" alt="Muskan" style="width:300px;height:300px;">
+                </a>
+                <h3 class="mt-1">Inderneel Bhojwani</h3>
+              </div>
+              <div class="flip-card-back py-3">
+                <div class="text-center my-5 py-3">
+                    <h3>Head, Corporate and Alumni Outreach</h3>
+                    <p>
+                      <span><a href="https://www.linkedin.com/in/inderneel-bhojwani-927765187/"><img src="images/linkedin.png" style="width: 50px;height: 30px; padding-right: 0px; margin-right: 0px;" alt="Remove this image" /></a>Linkedin</span><br>
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div> -->

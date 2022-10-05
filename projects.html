@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="home.css">
+    </link>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" href="asci-svg.png" type="image/gif" sizes="20x20">
+    <title>ASCI, COEP</title>
+
+    <!-- Projects CSS -->
+    <link rel="stylesheet" href="projects.css" type="text/css" />
+</head>
+
+<body>
+    <!-- =========== scroll up ============== -->
+    <a id="scroll-up-btn" href="#goToTop" title="Go to top" style="position: fixed;top: 90vh;right: 1vw;
+visibility:hidden;transition: all 0.5s ease-out;">
+        <img src="projects_images/icons8-scroll-up-48.png" style="height: 2.5em; width: 2.5em;" alt="...">
+    </a>
+
+    <script>
+        const scrollUpBtn = document.getElementById('scroll-up-btn')
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
+                scrollUpBtn.style.visibility = "visible";
+            } else {
+                scrollUpBtn.style.visibility = "hidden";
+            }
+        }
+    </script>
+
+    <!-- ======================================================= -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+
+    <header id="goToTop">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#1A2634">
+            <a class="navbar-brand logo" href="index.html"><img style="border-radius: 5px;" height=50px; width=170px;
+                    src="ASCI_LOGO.jpg"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="interviews.html">Interview Diaries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team/team21-22.html">Team</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto disappear">
+                    <li><a href="https://www.coep.org.in" target="_blank"><img class="coep-logo-img" width=120px
+                                src="./COEP_logo.png"></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- =========== Projects Section ================ -->
+
+    <section class="container">
+        <div class="page-heading" style="font-size: xx-large;" data-aos="zoom-in-up" data-aos-duration="1000"> Projects
+        </div>
+        <div class="projects">
+            <div class="project-item" data-aos="zoom-in-right" data-aos-duration="1000">
+                <div class="project-img">
+                    <img src="projects_images/ToDoList.JPG" alt="...">
+                </div>
+                <div class="project-info">
+                    <div class="project-title">TODO List</div>
+                    <div class="project-description">
+                        <p>To Do List allows to make large and overwhelming projects manageable. Also, you get more work
+                            done by
+                            focusing on high-value
+                            activities. Once you have a list of things you need to-do, it's much easier to prioritize
+                            the tasks on it.</p>
+                    </div>
+                    <div class="project-contributors">Contributors
+                        <p>1. Pratik Patil <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/pratik-patil-b44a18202" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a><br>
+                            2. Prerna Tulsiani <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/prerna-tulsiani-00b894202" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a>
+                        </p>
+                    </div>
+                    <div class="view-project-btn"><a target="_blank" href="https://github.com/pt3002/ToDoList">view
+                            project</a></div>
+                </div>
+            </div>
+            <div class="project-item" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="project-img">
+                    <img src="projects_images/covidDashboard.jpg" alt="...">
+                </div>
+                <div class="project-info">
+                    <div class="project-title">Covid Dashboard</div>
+                    <div class="project-description">
+                        <p>Covid Dashboard is an web application which provides the covid statistics (total active,
+                            confirmed cases, graphical statistics of covid data) from all over the India. It also shows
+                            all available vaccine slots for any area with it's pin code!</p>
+                    </div>
+                    <div class="project-contributors">Contributors
+                        <p>1. Mayur Kongutte <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/mayur-kongutte-6850511ba/" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a><br>
+                            2. Akshay Khoje <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/akshay-khoje-57b14220b" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a>
+                        </p>
+                    </div>
+                    <div class="view-project-btn"><a target="_blank"
+                            href="https://github.com/Mayur2506/Covid-Dashboard">view
+                            project</a></div>
+                </div>
+            </div>
+            <div class="project-item" data-aos="zoom-in-right" data-aos-duration="1000">
+                <div class="project-img">
+                    <img src="projects_images/secureNotesGenerator.png" alt="...">
+                </div>
+                <div class="project-info">
+                    <div class="project-title">Secure Notes Generator</div>
+                    <div class="project-description">
+                        <p>Secure Notes Generator is primarily used for taking down notes as and when
+                            required. In order to ensure
+                            personalization of the notes,this application is also equipped with a
+                            authentication feature provided by the
+                            password generator.
+                        </p>
+                    </div>
+                    <div class="project-contributors">Contributors
+                        <p>1. Sneha Venkateswaran <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/sneha-venkateswaran-048793214/" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a><br>
+                            2. Mihika Sanghvi <a class="social-button linkedin"
+                                href="http://linkedin.com/in/mihika-sanghvi-59b746203" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a>
+                        </p>
+                    </div>
+                    <div class="view-project-btn"><a target="_blank"
+                            href="https://github.com/sneha-0723/ASCIGrp3-1">view project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="project-img">
+                    <img src="projects_images/weatherWebsite.png" alt="...">
+                </div>
+                <div class="project-info">
+                    <div class="project-title">Weather Website</div>
+                    <div class="project-description">
+                        <p>A Weather website which shows the current and upcoming minimum and maximum temperature of
+                            your week ahead.
+                           You can find all weather statistics based on your location.</p>
+                    </div>
+                    <div class="project-contributors">Contributors
+                        <p>1. Anika Chawla <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/anika-c-4b3a17220/" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a><br>
+                            2. Anvita Mahajan <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/anvita-mahajan-232814200" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a><br>
+                            3. Chinmay Naik <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/chinmay-naik-270ab2214" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a>
+                        </p>
+                    </div>
+                    <div class="view-project-btn"><a target="_blank"
+                            href="https://github.com/csnaik/ASCI-Weather-Website">view
+                            project</a></div>
+                </div>
+            </div>
+            <div class="project-item" data-aos="zoom-in-right" data-aos-duration="1000">
+                <div class="project-img">
+                    <img src="projects_images/movieMania.png" alt="...">
+                </div>
+                <div class="project-info">
+                    <div class="project-title">Movie Mania</div>
+                    <div class="project-description">
+                        <p>Movie Mania is a Movie Search Web Application with different filters such as genre of
+                            movies, category of shows and language. You can find latest trending shows, serials and
+                            movies
+                            with just one click! </p>
+                    </div>
+                    <div class="project-contributors">Contributors
+                        <p>1. Swapnil Gite<a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/swapnil-gite-951ab0204" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a><br>
+                            2. Mohan Mali <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/mohan-mali-5993ab21a" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a>
+                        </p>
+                    </div>
+                    <div class="view-project-btn"><a target="_blank"
+                            href="https://github.com/SwapnilGite/asci-project1">view
+                            project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="project-img">
+                    <img src="projects_images/TheFortyTwoTimes.png" alt="...">
+                </div>
+                <div class="project-info">
+                    <div class="project-title">The Forty Two Times</div>
+                    <div class="project-description">
+                        <p>A website which aims to give the users the answers along with questions of the life. You will find all top news filtered by categories here. This will help to be updated with trending news. </p>
+                    </div>
+                    <div class="project-contributors">Contributors
+                        <p>1. Yash Suryawanshi <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/yash-suryawanshi-3482761ba" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a><br>
+                            2. Shyam Randar <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/shyam-randar-5a99681b8" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a>
+                        </p>
+                    </div>
+                    <div class="view-project-btn"><a target="_blank"
+                            href="https://github.com/curiyash/The-Forty-Two-Times">view
+                            project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-aos="zoom-in-right" data-aos-duration="1000">
+                <div class="project-img">
+                    <img src="projects_images/newsExtraction.png" alt="...">
+                </div>
+                <div class="project-info">
+                    <div class="project-title">News Extraction</div>
+                    <div class="project-description">
+                        <p>News Extraction is a python script which
+                            performs web scrapping on webpages. It's features includes extraction of the headlines,
+                            keyword, source
+                            URL, author, summary of news article from the web page.</p>
+                    </div>
+                    <div class="project-contributors">Contributors
+                        <p>1. Avani Dhongde <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/avani-dhongde-a80746212" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a><br>
+                            2. Sehajdeep Singh <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/sehajdeep1814" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a>
+                        </p>
+                    </div>
+                    <div class="view-project-btn"><a target="_blank"
+                            href="https://github.com/SwapnilGite/asci-project1">view
+                            project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="project-img">
+                    <img src="projects_images/onlineAuctionPortal.jpeg" alt="...">
+                </div>
+                <div class="project-info">
+                    <div class="project-title">Online Auction Portal</div>
+                    <div class="project-description">
+                        <p>An Online Auction Portal prototype where one can browse through a selection of items in the
+                            marketplace and place a
+                            bid on the desired product. It features a login-signup page. The project is hosted on
+                            Heroku. </p>
+                    </div>
+                    <div class="project-contributors">Contributors
+                        <p>1. Vedanshi Shah <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/vedanshi-shah-2835501b8" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a><br>
+                            2. Vivek Patil <a class="social-button linkedin"
+                                href="https://www.linkedin.com/in/vivek-patil-b28448206/" target="_blank"><i
+                                    class="fab fa-linkedin" style="width:15px; height: 20px;"></i></a>
+                        </p>
+                    </div>
+                    <div class="view-project-btn"><a target="_blank"
+                            href="https://github.com/doctorzufff/AuctionPortal">view
+                            project</a></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ---------------------------------------------------------------------------- -->
+    <footer class="footer bg-dark py-3">
+
+        <h3 text-align="center" style="color: white;">Connect</h3>
+
+        <br>
+        <div class="rounded-social-buttons">
+            <a class="social-button facebook" href="https://m.facebook.com/coepasci" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a class="social-button github" href="https://www.github.com/asci-coep/" target="_blank"><i
+                    class="fab fa-github"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/company/coepasci" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a class="social-button instagram" href="http://www.instagram.com/coep_asci" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+        <br>
+        <div class="container">
+            <span class="text-muted ">Copyright&copy;ASCI COEP</span><br>
+            <span class="text-muted ">Designed by ASCI Core Team</span>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/holder/2.9.7/holder.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

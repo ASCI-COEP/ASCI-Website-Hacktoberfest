@@ -155,27 +155,33 @@ html, body {
 }
 
 .rounded-social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .rounded-social-buttons .social-button {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin: 0 10px;
+  display: flex;
+position: relative;
+cursor: pointer;
+width: 3.125rem;
+height: 3.125rem;
+border: 0.125rem solid transparent;
+padding: 0;
+text-decoration: none;
+text-align: center;
+color: #fefefe;
+font-size: 1.5625rem;
+font-weight: normal;
+line-height: 2em;
+border-radius: 1.6875rem;
+transition: all 0.5s ease;
+margin-right: 0.25rem;
+margin-bottom: 0.25rem;
+justify-content: center;
+align-items: center;
 }
 
 .rounded-social-buttons .social-button:hover,
@@ -228,16 +234,6 @@ html, body {
 
 .rounded-social-buttons .social-button.instagram {
   background: #aa076b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #61045f,
-    #aa076b
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #61045f,
-    #aa076b
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .rounded-social-buttons .social-button.instagram:hover,

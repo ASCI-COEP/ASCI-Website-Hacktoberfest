@@ -178,11 +178,15 @@ color:black;
 }
 
 .rounded-social-buttons {
-text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .rounded-social-buttons .social-button {
-display: inline-block;
+  margin: 0 10px;
+  display: flex;
 position: relative;
 cursor: pointer;
 width: 3.125rem;
@@ -199,6 +203,8 @@ border-radius: 1.6875rem;
 transition: all 0.5s ease;
 margin-right: 0.25rem;
 margin-bottom: 0.25rem;
+justify-content: center;
+align-items: center;
 }
 
 .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
@@ -245,8 +251,6 @@ border-color: #007bb5;
 
 .rounded-social-buttons .social-button.instagram {
   background: #AA076B;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
